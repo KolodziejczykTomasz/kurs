@@ -1,5 +1,5 @@
 import "./Root.css";
-import { ListUser } from "../../components/ListUser/ListUser";
+import { ListUser } from "components/ListUser/ListUser";
 
 export const Root = () => {
   return (
