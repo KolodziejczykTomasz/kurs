@@ -25,7 +25,7 @@ export const Container = styled.div`
 
 export const Name = styled.p`
   font-size: 25px;
-  text-align: center;
+  text-align: left;
   width: 300px;
 `;
 
@@ -35,13 +35,3 @@ export const Attendance = styled.p`
   width: 300px;
 `;
 
-export const IconClose = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70px;
-  height: 70px;
-  border: 1px solid grey;
-  border-radius: 50%;
-  margin-top: 15px;
-`;

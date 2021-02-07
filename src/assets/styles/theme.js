@@ -1,12 +1,10 @@
-
 export const theme = {
   colors: {
-    powderWhite: "#FFFDF9",
-    persianGreen: "#06B49A",
-    lightBlue: "#AFDBD2",
-    onyx: "#36313D",
+    grey: "#282c34",
+    white: "#fff",
+    black: "#000",
   },
-  fonts: ["sans-serif", "Roboto"],
+  fonts: ["Montserrat", "sans-serif"],
   fontSizes: {
     small: "1em",
     medium: "2em",

@@ -7,8 +7,10 @@ import GlobalStyle from "assets/styles/GlobalStyle";
 export const Root = () => {
   return (
     <>
-      <GlobalStyle />
-      <ThemeProvider theme={theme}><ListUser /></ThemeProvider>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <ListUser />
+      </ThemeProvider>
     </>
   );
 };

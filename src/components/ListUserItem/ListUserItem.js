@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Button } from "components/Button/Button";
 import {
   Wrapper,
   Average,
   Name,
   Attendance,
   Container,
-  IconClose,
 } from "./ListUserItem.styles";
 
 
@@ -18,7 +18,7 @@ export const ListUserItem = ({ dataUsers: { name, attendance = "0%", average } }
         <Name>{name}</Name>
         <Attendance>{attendance}</Attendance>
       </Container>
-      <IconClose>X</IconClose>
+      <Button/>
     </Wrapper>
   </>
 );
@@ -26,9 +26,9 @@ export const ListUserItem = ({ dataUsers: { name, attendance = "0%", average } }
 
 
 ListUserItem.propTypes = {
-  dataUsers: {
+  dataUsers: PropTypes.shape({
     name: PropTypes.string.isRequired,
     attendance: PropTypes.string.isRequired,
     average: PropTypes.string.isRequired,
-  },
+  }),
 };
