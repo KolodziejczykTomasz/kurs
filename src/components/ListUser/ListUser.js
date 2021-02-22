@@ -8,8 +8,8 @@ export const ListUser = () => (
     <Wrapper>
       <Header>Średnia ocen uczniów</Header>
       <Content>
-        {users.map((dataUsers) => (
-          <ListUserItem key={dataUsers.name} dataUsers={dataUsers} />
+        {users.map((dataUsers, i) => (
+          <ListUserItem index={i} key={dataUsers.name} dataUsers={dataUsers} />
         ))}
       </Content>
     </Wrapper>
