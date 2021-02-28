@@ -9,9 +9,13 @@ import {
   Container,
 } from "./ListUserItem.styles";
 
-const showIndex = (index) => alert(`This is student #${index + 1}`)
 
-export const ListUserItem = ({ index, dataUsers: { name, attendance = "0%", average } }) => (
+
+
+export const ListUserItem = ({
+  deleteUser,
+  dataUsers: { name, attendance = "0%", average },
+}) => (
   <>
     <Wrapper>
       <Average>{average}</Average>
@@ -19,7 +23,7 @@ export const ListUserItem = ({ index, dataUsers: { name, attendance = "0%", aver
         <Name>{name}</Name>
         <Attendance>{attendance}</Attendance>
       </Container>
-      <Button  onClick={()=>showIndex(index)}/>
+      <Button type="button" onClick={() => deleteUser(name)} />
     </Wrapper>
   </>
 );
