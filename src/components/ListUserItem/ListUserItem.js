@@ -9,26 +9,23 @@ import {
   Container,
 } from "./ListUserItem.styles";
 
-
-
-
 export const ListUserItem = ({
   deleteUser,
   dataUsers: { name, attendance = "0%", average },
-}) => (
-  <>
-    <Wrapper>
-      <Average>{average}</Average>
-      <Container>
-        <Name>{name}</Name>
-        <Attendance>{attendance}</Attendance>
-      </Container>
-      <Button type="button" onClick={() => deleteUser(name)} />
-    </Wrapper>
-  </>
-);
-
-
+}) => {
+  return (
+    <>
+      <Wrapper>
+        <Average value={average}>{average}</Average>
+        <Container>
+          <Name>{name}</Name>
+          <Attendance>{attendance}</Attendance>
+        </Container>
+        <Button type="button" onClick={() => deleteUser(name)} />
+      </Wrapper>
+    </>
+  );
+};
 
 ListUserItem.propTypes = {
   dataUsers: PropTypes.shape({

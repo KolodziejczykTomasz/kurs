@@ -17,6 +17,12 @@ export const Average = styled.div`
   border: 1px solid grey;
   border-radius: 50%;
   margin-top: 15px;
+  background-color: ${({ theme, value }) => {
+    if (value > 4) return theme.colors.success;
+    if (value > 3) return theme.colors.warning;
+    if (value > 2) return theme.colors.danger;
+    return theme.colors.grey;
+  }};
 `;
 
 export const Container = styled.div`

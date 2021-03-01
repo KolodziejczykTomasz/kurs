@@ -3,6 +3,9 @@ export const theme = {
     grey: "#282c34",
     white: "#fff",
     black: "#000",
+    success: "green",
+    warning: "orange",
+    danger: "red"
   },
   fonts: ["Montserrat", "sans-serif"],
   fontSizes: {

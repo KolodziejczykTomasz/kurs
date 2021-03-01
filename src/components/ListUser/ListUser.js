@@ -41,7 +41,7 @@ export const ListUser = () =>{
   return (
     <>
       <Wrapper>
-        <h1>{isLoading ? "Loading..." : "Users List"}</h1>
+        <h1>{isLoading ? "Loading..." : null}</h1>
         <Header>Średnia ocen uczniów</Header>
         <Content>
           {users.map((dataUsers, i) => (
